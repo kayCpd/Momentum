@@ -1,0 +1,7 @@
+{
+  "appId": "io.Momentum.KI",
+  "appName": "Momentum",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}

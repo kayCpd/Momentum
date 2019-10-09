@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Account</ion-title>
+    <!-- <ion-button color="primary" (click)="logout()">LogOut</ion-button> -->
+    <ion-buttons slot="primary"> 
+      <ion-button (click)="logout()">Log Out</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col width-200>
+      <ion-list>
+          <ion-item>
+              <strong>Accounts: </strong> {{clientData.accounts}}
+            </ion-item>
+          <ion-item>
+            <strong>Age: </strong> {{clientData.age}}
+          </ion-item>
+          <ion-item>
+              <strong>Name: </strong> {{clientData.name}}              
+            </ion-item>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    
+    <ion-item>
+      <ion-label position="floating">Enter Account Number To Transact</ion-label>
+      <ion-input type="text" [(ngModel)]="accountNumber" name="accountNumber"></ion-input>
+    </ion-item>
+         <ion-button color="primary" (click)="updateClientAccountList()">Add To AccountList</ion-button>
+         
+         <ion-item>
+      <ion-label>Enter Withdrawal Amount</ion-label>
+      <ion-input type="number" [(ngModel)]="overdraft" name="overdraft"></ion-input>
+         </ion-item>
+         <ion-item>
+      <ion-label>Enter Deposit Amount</ion-label>
+      <ion-input type="number" [(ngModel)]="balance" name="balance"></ion-input>
+         </ion-item>
+      <ion-row>
+         <ion-button color="primary" (click)="updateClientAccountTransaction()">Transact</ion-button>
+         <ion-button color="primary" (click)="newClientAccountCreate()">Create Account</ion-button>
+        </ion-row>
+  </ion-row>
+<ion-row>
+      <ion-item>
+          <strong>Balance: </strong> {{clientData.age}}
+      </ion-item>
+    <ion-item>
+        <strong>OverDraft: </strong> {{clientData.age}}
+    </ion-item>
+         <ion-button color="primary" (click)="getClientAccount()">Get Account Details</ion-button>
+</ion-row>
+
+</ion-content>

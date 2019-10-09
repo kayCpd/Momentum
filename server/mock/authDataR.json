@@ -1,0 +1,11 @@
+{
+    "kind": "identitytoolkit#VerifyPasswordResponse",
+    "localId": "B8os8Ryx60YFdtoBkrdb2zKD1uC2",
+    "email": "rob@email.com",
+    "displayName": "",
+    "idToken": "aaikaIQXgpjgmMt2QwaNIquLfiP7NephhPQ. . .",
+    "registered": true,
+    "refreshToken": "AEu4IL34l6D5xNr . . .",
+    "expiresIn": "3600"
+}
+   

@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Welcome To Momentum</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card class="welcome-card">
+    <ion-img src="/assets/shapes.svg"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>Lets Get You Logged-In</ion-card-subtitle>
+      <ion-card-title>Welcome to the Momentum Banking App</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Features; Login, Add a new account, 
+        Display of account list with balances and client details, 
+        Making a Deposit or a Withdrawal.
+          .</p>
+    </ion-card-content>
+  </ion-card>
+
+    <form #form="ngForm" (ngSubmit)="login(form)" method="post">
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input ngModel type="email" name="email"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input ngModel type="password" name="password"></ion-input>
+      </ion-item>
+    
+      <ion-button type="submit" expand="full" color="primary">Login</ion-button>
+    </form>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+      <ion-row>
+        <ion-col>
+          
+          <!-- <ion-button color="primary" expand="full" color="primary" (click)="login()">Login</ion-button> -->
+        </ion-col>
+      </ion-row>
+  </ion-toolbar>
+</ion-footer>
